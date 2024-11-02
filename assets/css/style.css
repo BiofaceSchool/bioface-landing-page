@@ -1,0 +1,98 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.btn {
+    background-color: white;
+    color: #000;
+    border-radius: 15px;
+}
+.card {
+    width: min(100%, 700px);
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        
+        menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2em;
+        }
+    }
+}
+
+#hero {
+    background-color: var(--color-primary);
+    .hero__content {
+        width: min(100%, 900px);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        color: #fff;
+    }
+}
+
+#benefits {
+    background-color: whitesmoke;
+ 
+
+}
+
+#about {
+    
+    .about__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+}
+
+#team {
+
+}
+
+footer {
+    background-color: var(--color-secondary);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 90px;
+
+    .footer__subscription {
+        form input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-right: 10px;
+        }
+    }
+}
