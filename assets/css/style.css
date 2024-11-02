@@ -126,6 +126,9 @@ header {
         flex-wrap: wrap;
         .card {
             text-align: center;
+            width: min(100%, 200px);
+            padding: 2em;
+
             h5 {
                 text-transform: uppercase;
             }
@@ -165,7 +168,7 @@ header {
 
 
 .team__text {
-    width: 50%;
+    width: min(100%, 700px);
     h2 {
         color: var(--color-primary);
     }
