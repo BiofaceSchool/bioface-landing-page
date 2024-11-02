@@ -11,18 +11,18 @@
     <header>
         <nav class="container">
             <div class="logo">
-                <a href="index.html"><img src="images/logo.png" alt="logo">Bioface</a>
+                <a href="#hero">Bioface</a>
             </div>
             <menu>
                 <a href="#benefits">Benefits</a>
                 <a href="#pricing">Pricing</a>
                 <a href="#about">About</a>
                 <a href="#team">Team</a>
+                <div class="buttons">
+                    <button type="button">Get started</button>
+                </div>
             </menu>
-            <div class="buttons">
-                <button type="button">Login</button>
-                <button type="button">Sign Up</button>
-            </div>
+            
         </nav>
     </header>
 
@@ -32,8 +32,33 @@
                 <div class="hero__content">
                     <h1>Revolucionamos el acceso a las universidades con reconocimiento facial.</h1>
                     <p>Bioface School ayuda a los estudiantes a ingresar fácilmente al campus sin necesidad de carné o huella.</p>
-                    <a href="#">Read More</a>
-                    <button class="btn" type="button">Download for Android</button>
+                    <div>
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                            <button type="submit" class="btn primary">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="hero__image image">
+                    <img src="assets/images/bioface_hero.png" alt="Hero Image">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <hgroup>
+                    <h2>¿Qué es Bioface School?</h2>
+                    <p>Conoce cómo funciona nuestra solución de reconocimiento facial para universidades.</p>
+                </hgroup>
+                <div class="about__content content">
+                    <div class="about__image image">
+                        <img src="assets/images/bioface_about.png" alt="About Image">
+                    </div>
+                    <div class="about__text card">
+                        <p>Bioface School es una solución de reconocimiento facial que permite a los estudiantes ingresar al campus de forma rápida y segura. Nuestra tecnología biométrica captura la imagen del rostro de los estudiantes y la compara con la base de datos de la universidad para autorizar el acceso.</p>
+                        <p>Con Bioface School, los estudiantes pueden olvidarse de los carnés y las huellas dactilares, ya que su rostro es la llave de acceso al campus. Además, los administradores pueden monitorear el flujo de estudiantes en tiempo real y acceder a informes detallados para mejorar la seguridad y la logística del campus.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -45,7 +70,7 @@
                     <p>Optimiza el acceso al campus con tecnología de reconocimiento facial.</p>
                 </hgroup>
                 <div class="content">
-                    <div class="card card-student">
+                    <div class="card secondary card-student">
                         <h4>Estudiantes</h4>
                         <p>Aprovecha la tecnología biométrica para ingresar a tu universidad de forma rápida y segura.</p>
                         <h5>Lista de Beneficios:</h5>
@@ -56,7 +81,7 @@
                             <li>Innovación y Modernidad: Usa tu rostro como llave de acceso, disfrutando de una tecnología avanzada.</li>
                         </ul>
                     </div>
-                    <div class="card card-admin">
+                    <div class="card secondary card-admin">
                         <h4>Administradores</h4>
                         <p>Controla y gestiona el acceso al campus de manera eficiente y automatizada.</p>
                         <h5>Lista de Beneficios:</h5>
@@ -74,12 +99,15 @@
         <section id="pricing">
             <div class="container">
                 <hgroup>
-                    <h2>Precios</h2>
-                    <p>Conoce nuestras ofertas de precios para diferentes tamaños de empresas.</p>
+                    <h2>Elige el plan perfecto para tu institución.</h2>
+                    <p>Nuestros planes están diseñados para adaptarse a las necesidades de universidades grandes o pequeñas.</p>
                 </hgroup>
                 <div class="content">
                     <div class="card card-basic">
-                        <h4>Basic Plan</h4>
+                        <div class="head">
+                            <h3>Basic Plan</h3>
+                            <span class="price">$100/mo</span>
+                        </div>
                         <p>Instituciones pequeñas (500-2000 estudiantes).</p>
                         <ul>
                             <li>Registro de hasta 2000 estudiantes.</li>
@@ -87,11 +115,14 @@
                             <li>Soporte por email.</li>
                             <li>Reportes mensuales.</li>
                         </ul>
-                        <h5>$200</h5>
-                        <a href="#" class="btn">Get started</a>
+                        <h5></h5>
+                        <button class="btn primary" type="button">Get started</button>
                     </div>
                     <div class="card card-premium">
-                        <h4>Premium Plan</h4>
+                        <div class="head">
+                            <h3>Premium Plan</h3>
+                            <span class="price">$500/mo</span>
+                        </div>
                         <p>Instituciones grandes (5000+ estudiantes).</p>
                         <ul>
                             <li>Registro ilimitado de estudiantes.</li>
@@ -102,38 +133,29 @@
                             <li>API para integración con otros sistemas.</li>
                             <li>Monitoreo en tiempo real con alertas personalizadas.</li>
                         </ul>
-                        <h5>$500</h5>
-                        <a href="#" class="btn">Get started</a>
+                        <button class="btn" type="button">Get started</button>
                     </div>
                 </div>
         </section>
 
-        <section id="about">
+        <section id="subscribe">
             <div class="container">
-                <hgroup>
-                    <h2>¿Qué es Bioface School?</h2>
-                    <p>Conoce cómo funciona nuestra solución de reconocimiento facial para universidades.</p>
-                </hgroup>
-                <div class="about__content content">
-                    <div class="about__text card">
-                        <p>Bioface School es una solución de reconocimiento facial que permite a los estudiantes ingresar al campus de forma rápida y segura. Nuestra tecnología biométrica captura la imagen del rostro de los estudiantes y la compara con la base de datos de la universidad para autorizar el acceso.</p>
-                        <p>Con Bioface School, los estudiantes pueden olvidarse de los carnés y las huellas dactilares, ya que su rostro es la llave de acceso al campus. Además, los administradores pueden monitorear el flujo de estudiantes en tiempo real y acceder a informes detallados para mejorar la seguridad y la logística del campus.</p>
-                    </div>
-                    <div class="about__image">
-                        <img src="images/about.jpg" alt="About Image">
-                    </div>
+                <div class="">
+                    <h3 class="subscribe-title">Bioface School</h3>
+                    <p class="subscribe-text">Mas de 1000 usuarios descargaron nuestra aplicación, y tu que esperas :"b!</p>
+                </div>
+                <div class="subscribe-btn-container">
+                    <a class="subscribe-btn" href="#hero">Descarga ahora</a>
                 </div>
             </div>
         </section>
 
+
         <section id="team">
             <div class="container">
-                <hgroup>
-                    <h2>Nuestro Equipo</h2>
-                    <p>Somos un equipo comprometido y motivado.</p>
-                </hgroup>
                 <div class="team__content content">
-                    <div class="team__text card">
+                    <div class="team__text">
+                        <h2>Nuestro Equipo</h2>
                         <p>Nuestro equipo está formado por un grupo apasionado de estudiantes de Ingenieria de Software con experiencia en tecnologías avanzadas como Machine Learning, reconocimiento facial y desarrollo de soluciones biométricas. Juntos, compartimos una misión común: transformar la forma en que las universidades gestionan el acceso de sus estudiantes, haciendo que sea más seguro, eficiente y moderno. Cada miembro del equipo aporta un conjunto único de habilidades que, combinadas, hacen posible que Bioface School sea una solución líder en el mercado educativo.</p>
                         <h4>Integrantes Clave:</h4>
                         <ul>
@@ -145,7 +167,7 @@
                         </ul>
                     </div>
                     <div class="team__image">
-                        <img src="images/team.jpg" alt="Team Image">
+                        <img src="assets/images/bioface_team.png" alt="Team Image">
                     </div>
                 </div>
             </div>
