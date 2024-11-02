@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
+    flex-wrap: wrap;
 }
 .btn {
     background-color: white;
@@ -121,7 +122,15 @@ header {
 #benefits {
     background-color: whitesmoke;
  
-
+    .content {
+        flex-wrap: wrap;
+        .card {
+            text-align: center;
+            h5 {
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 #about {
@@ -165,7 +174,7 @@ header {
 /* Subscribe Section
 --------------------------------*/
 #subscribe {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/images/bioface_suscribe.png) fixed center center;
+    background: linear-gradient(rgb(37, 37, 37), rgb(31, 31, 31)), url(assets/images/bioface_suscribe.png) fixed center center;
     background-size: cover;
     padding: 80px 0;
     margin-block: 90px;
